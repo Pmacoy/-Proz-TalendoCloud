@@ -1,0 +1,66 @@
+Aula 2
+
+Carmen quer poupar dinheiro para sua viagem de fim de ano, mas ela compra com dinheiro, cartão de débito e cartão de crédito. Ela precisa de um aplicativo que calcule os gastos totais dela no mês
+
+Entrada
+	- valor total inicio
+	- gastos mês
+	- gastos valor
+	- valores fixos
+	- valores variaveis
+	- tipo de pagamento
+
+Processamento
+	- Realizar levantamento dos gastos fixos
+	- Realizar um levamento prévio dos gastos variáveis
+	- Criar tabela de recebidos e gastos
+	- Colocar dados de valores reecebidos e gastos
+
+Resultado
+	- Programa mostra os valores iniciais, e o restante do valor ao retirar os gastos
+
+
+
+Rafael foi na nutricionista e percebeu que precisa perder peso para ter o IMC (Índice de massa corporal) ideal. Ele quer um sistema que calcule se IMC. Seria legal se ele também salvasse um histórico mês a mês
+
+IMC = Altura / Peso²
+
+Entrada
+	- altura
+	- data
+	- peso
+
+Processamento
+	- altura será constante
+	- leitura da data
+	- leitura do peso
+	- cálculo do IMC
+	
+Resultado
+	- informado data e peso e o calculo do IMC
+
+
+Algoritmo de avaliação games
+
+Var
+game: caracter
+nota: real
+comentarios: caracter
+infantil: logico
+cooperativo: logico
+
+Inicio
+escreva("Informe o titulo do game");
+leia(game)
+escreva("Escreva um comentario sobre o game");
+leia(comentario)
+escreva("Qual a Nota para este game:");
+leia(nota)
+escreva("É indicado para o publico infantil?");
+leia(infantil)
+escreva("Tem modo Cooperativo?")
+leia(cooperativo)
+
+FimAlgoritmo
+
+Paulo A Julio

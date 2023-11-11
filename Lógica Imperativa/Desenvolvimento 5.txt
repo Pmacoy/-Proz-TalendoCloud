@@ -1,0 +1,29 @@
+Desenvovimento 5
+
+var
+	fumante: logico
+	animais: logico
+	qtd_grupo: inteiro
+	area_restaurante: caractere
+
+Inicio
+	escreva("Fumante?:");
+	leia (fumante)
+	escreva("Possui animal?:");
+	leia (animais)
+	escreva("Quantas pessoas são:");
+	leia (fumante)
+	
+	se (fumante ou animais) então
+	(area_restaurante= "Externa")
+	se (qtd_grupo>=5) então
+	(area_restaurante= "1º andar")
+	senao
+	(area_restaurante= "terreo")
+	fimse
+	
+	escreva("Area para o grupo:",area_restaurante)
+
+FimAlgoritmo	
+
+Paulo A Julio

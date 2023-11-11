@@ -1,0 +1,17 @@
+Desenvolvimento 6
+
+var 
+	nome_equipe: caractere
+	contador: inteiro
+
+inicio
+	escreva ("Qual o nome da equipe?:);
+	leia (nome_equipe)
+	contador <_ 1
+	enquanto (contador <= 5) faca
+		escreva(nome_equipe,"-", contador)
+		contador <_ contador+1
+	fimenquanto
+
+FimAlgoritmo
+	

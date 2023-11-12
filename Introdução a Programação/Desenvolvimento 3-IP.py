@@ -1,3 +1,4 @@
+#/bin/bash
 #Andares Hotel
 print('Loop com  for')
 for andar in range(20):

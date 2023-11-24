@@ -1,4 +1,4 @@
-#COMANDOS GIT
+# COMANDOS GIT
 
 
 git add - Move as alterações do diretório de trabalho para a área de staging. Assim, você tem a oportunidade de preparar um instantâneo antes de realizar o commit ao histórico oficial.

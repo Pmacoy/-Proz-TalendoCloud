@@ -1,0 +1,33 @@
+* {
+   font-family: 'Montserrat', sans-serif; 
+   text-decoration: none;
+   list-style: none;
+}
+
+header {
+    color: red;
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: whitesmoke;
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    color: whitesmoke;
+    background-color: gray;
+}
+
+section {
+    text-align: center;
+}
+
+ul, a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}

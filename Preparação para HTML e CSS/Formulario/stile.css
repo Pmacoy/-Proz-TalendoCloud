@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h2 {
+    
+}
+.container{
+    margin: 0 40px;
+    max-width: 1470px;
+    width: 100%;
+    padding: 0 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px 48px;
+}
+.s-one {
+    margin-bottom: 50px;
+    padding: 50px 0px;
+}
+.s-two {
+    margin-bottom: 50px;
+    padding: 50px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.caixa {
+    border: 2px solid blue;
+}
+
+div {
+    border: 2px solid red;
+}
+
+p {
+    border: 2px solid burlywood;
+    padding: 12px;
+}
+
+div > a {
+    color: blue;
+}
+
+#caixa2 {
+    border: 2px solid green;
+}
+
+.caixa a {
+    color: blueviolet;
+}
+
+#caixa2 a {
+    color: black;
+}
+p a {
+    color: bisque;
+}
+
+div > div {
+    padding: 12px;
+}

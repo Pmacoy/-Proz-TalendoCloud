@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- CSS -->
+    <link rel="stylesheet" href="style.css" media="screen">
+
+     <!-- Font Externa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+
+     <!-- Título da página (aparece na aba) -->
+    <title>Casdatro</title>
+</head>
+<body>
+    <section>
+
+        <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo") -->
+        <div>
+            <h1 id="titulo"><strong>Cadastro para Contato</strong> </h1>
+            <p id="subtitulo"><Strong>Complete suas Informações</strong></p>
+            <br>
+        </div>
+        
+        <!-- Início do formulário -->
+        <form>
+            <fieldset class="grupo">
+                 <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="name"><strong>Nome</strong></label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                 <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="lname"><strong>Sobrenome</strong></label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+            </fieldset>
+
+             <!-- Campo de email com-->
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+             <!-- Campo de telefone com-->
+            <div class="campo">
+                <label for="tel"><strong>Telefone</strong></label>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+
+            <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+            <div class="campo">
+                <label for="rent"><strong>O que deseja?</strong></label>
+                <label>
+                    <input type="radio" name="rent" value="alugar" checked>Alugar
+                </label>
+                <label>
+                    <input type="radio" name="rent" value="comprar">Comprar
+                </label>
+                <label>
+                    <input type="radio" name="rent" value="vender">Vender
+                </label>
+            </div>
+
+            <!-- Campo de tipo com 3 opções para escolha (select option) e css de classe "campo" -->
+            <div class="campo">
+                <label for="stipo"><strong>Selecione um tipo:</strong></label>
+                <select id="stipo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Carro</option>
+                    <option>Moto</option>
+                    <option>Van</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Campo de itens para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+                <div id="check">
+                    <label><strong>Selecione os itens que possui/deseja:</strong></label><br><br>
+                    <input type="checkbox" name="i1" id="i1" value="Gasolina">
+                    <label for="i1">Gasolina</label>
+                    <input type="checkbox" name="i2" id="i2" value="Etanol">
+                    <label for="i2">Etanol</label>
+                    <input type="checkbox" name="i3" id="i3" value="Diesel">
+                    <label for="i3">Diesel</label>
+                    <input type="checkbox" name="i4" id="i4" value="GPL">
+                    <label for="i4">GPL</label>
+                    <input type="checkbox" name="i5" id="i5" value="Elétrico">
+                    <label for="i5">Elétrico</label>
+                    <input type="checkbox" name="i6" id="i6" value="Híbrido">
+                    <label for="i6">Híbrido</label>                   
+                </div>
+            </fieldset>
+            
+             <!-- Caixa de texto -->
+            <div class="campo">
+                <br>
+                <label><strong>Deseja deixar mais alguma Informação?</strong></label>
+                <textarea name="info" id="info" rows="6" style="width: 26em;"></textarea>
+            </div>
+
+             <!-- Botão para enviar o formulário -->
+            <button class="button" type="submit"><strong>Enviar</strong></button>
+        </form>
+    </section>
+    
+</body>
+</html>

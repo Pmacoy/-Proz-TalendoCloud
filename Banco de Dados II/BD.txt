@@ -1,0 +1,62 @@
+CREATE DATABASE telescopium;
+\c telescopium;
+
+CREATE TABLE sites (
+  id_site SERIAL PRIMARY KEY,
+  nome_site Varchar(20),
+  link_site Varchar(30),
+  like_site INT
+ );
+
+CREATE TABLE news (
+  id_news SERIAL PRIMARY KEY,
+  data_news DATE,
+  tag_news Varchar(20),
+  titulo_news Varchar(20),
+  like_news INT,
+  id_site_news INTEGER REFERENCES sites(id_site)
+ );
+ 
+CREATE TABLE podcast(
+  id_podcast SERIAL PRIMARY KEY,
+  data_pod DATE,
+  tag_pod Varchar(20),
+  titulo_pod Varchar(20),
+  genero_pod Varchar(20),
+  like_pod  INT,
+  duracao_pod INT,
+  id_site_pod INTEGER REFERENCES sites(id_site)
+);
+
+CREATE TABLE usuario (
+  id_usuario SERIAL PRIMARY KEY,
+  nome_usuario Varchar(20),
+  email_usuario Varchar(30),
+  senha_usuario Varchar(20),
+  data_registro_usuario DATE,
+  data_aniv_usuario DATE,
+  favoritos_usuario INT,
+  id_pod_usuario INTEGER REFERENCES podcast(id_podcast),
+  id_news_usuario INTEGER REFERENCES news(id_news)
+);
+
+INSERT INTO sites (nome_site, link_site, like_site) VALUES 
+ ('Jovem Nerd', 'jovemnerd.com.br', 50),
+ ('PodCats', 'www.youtube.com/c/podcats', 31);
+ ('Omelete', 'www.omelete.com.br', 80);
+ 
+INSERT INTO news (data_news, tag_news, titulo_news, like_news, id_site_news) VALUES 
+ ('11-01-2024', 'acao', 'Prévia de Duna: Parte 2', 150, 1),
+ ('11-02-2024','aventura', 'The Mandalorian & Grogu', 31, 3);
+ 
+INSERT INTO podcast (data_pod, tag_pod, titulo_pod, genero_pod, like_pod, duracao_pod, id_site_pod) VALUES 
+ ('10-01-2024', 'cultura', 'NerdCast', 'pop', 150, 130, 1),
+ ('02-15-2024','cotidiano', 'PodCats', 'comédia', 31, 120, 2);
+ 
+INSERT INTO usuario (nome_usuario, email_usuario, senha_usuario, data_registro_usuario, data_aniv_usuario, favoritos_usuario, id_news_usuario, id_pod_usuario) VALUES 
+ ('João Nunes', 'jn@gmail.com', '123465', '10-05-2020', '10-15-1980', 50, 1, 2),
+ ('Daniela Ramos', 'dramos@outlook.com', '253641', '12-08-2022', '11-25-2001', 30, 2, 1);
+ 
+SELECT * FROM podcast;
+ALTER TABLE usuario DROP COLUMN favoritos_usuario;
+ALTER TABLE usuario ADD COLUMN favoritos_usuario INT;
